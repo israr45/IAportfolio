@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Israr Ahmad - Home</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">  
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">  
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+
+<style>
+        .navbar {
+            background-color: #2c3e50;
+            padding: 1rem 0;
+        }
+        
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        
+        .navbar-toggler {
+            background-color: #ffffff3d;
+        }
+        
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        }
+        
+        .nav-link {
+            padding: 0.5rem 1rem !important;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover {
+            color: #ecf0f1 !important;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 4px;
+        }
+        
+        .nav-link.active {
+            font-weight: bold !important;
+            text-decoration: underline !important;
+        }
+        
+
+	@media (max-width: 991px) {  
+   	 .navbar-collapse {  
+        background-color: #2c3e50;  
+        padding: 10px;  
+    	}  
+   	 .navbar-nav {  
+        text-align: center;  
+    		}  
+    	.nav-item {  
+        margin: 5px 0;  
+    		}  
+         }		
+
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 100px 0;
+            text-align: center;
+        }
+        
+        .animate-typing {
+            width: 21ch;
+            animation: typing 3.5s steps(21), blink .5s step-end infinite alternate;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 3px solid;
+            margin: 0 auto;
+        }
+
+        @keyframes typing {
+            from { width: 0 }
+        }
+            
+        @keyframes blink {
+            50% { border-color: transparent }
+        }
+
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .visitor-count {
+            font-size: 0.9rem;
+            letter-spacing: 1px;
+        }
+
+        .visitor-count span {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 4px 8px;
+            border-radius: 4px;
+            margin-left: 5px;
+        }
+
+        body {
+            padding-bottom: 80px;
+        }
+
+        /* New styles for research content */
+        .research-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .research-content h2 {
+            color: #2c3e50;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        .research-content ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        .research-content li {
+            margin-bottom: 10px;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 0 auto 30px;
+            animation: float 4s ease-in-out infinite;
+	    object-fit: cover;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+	
+	
+
+	  .research-content h2 {  
+            font-size: 1.35rem;  
+            color: #2c3e50;  
+            border-bottom: 1px solid #ddd;  
+            padding-bottom: 10px;  
+            margin-top: 40px;  
+            margin-bottom: 20px;  
+        }  
+
+        .research-content h3 {  
+            font-size: 1.15rem;  
+            color: #34495e;  
+            margin-top: 30px;  
+            margin-bottom: 15px;  
+        }  
+
+        .research-content h4 {  
+            font-size: 1.05rem;  
+            color: #2c3e50;  
+            margin-top: 20px;  
+            margin-bottom: 10px;  
+        }  
+
+        .research-content ul {  
+            margin-bottom: 20px;
+    	    list-style-type: disc;  /* This ensures bullet points are shown */  
+            padding-left: 40px;     /* This adds proper indentation */    
+        }  
+	
+	.research-content ul li {  
+    	margin-bottom: 8px;  
+    	display: list-item;     /* This ensures list items are properly displayed */  
+	}  
+
+	.research-content ul ul {  
+  	list-style-type: circle; /* For nested lists, uses circle bullets */  
+    	margin-top: 8px;  
+    	margin-bottom: 8px;  
+	}  
+ 
+
+        .like-counter {  
+            display: inline-block;  
+            cursor: pointer;  
+            font-size: 1.05rem;  
+            margin-left: 10px;  
+        }  
+
+        .like-counter.liked {  
+            color: red;  
+        } 
+
+
+.pulse-effect {  
+    animation: pulse 2s infinite;  
+}  
+
+@keyframes pulse {  
+    0% {  
+        transform: scale(1);  
+    }  
+    50% {  
+        transform: scale(1.05);  
+    }  
+    100% {  
+        transform: scale(1);  
+    }  
+} 
+
+.icon-title {
+    font-size: 1.30rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+.icon-title i {
+    margin-right: 0.5rem;
+    font-size: 1.8rem;
+}
+
+.icon-subtitle {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.icon-subtitle i {
+    margin-right: 0.5rem;
+    font-size: 1.3rem;
+}
+
+ul li i {
+    margin-right: 0.5rem;
+    font-size: 1.1rem;
+}
+
+/* Single grayscale color for all icons */
+.text-gray {
+    color: #4a4a4a;  /* Medium gray color */
+}
+
+/* Hover effect for interactivity */
+i.text-gray:hover {
+    color: #2a2a2a;  /* Slightly darker on hover */
+    transition: color 0.3s ease;
+}
+
+.text-primary { color: #007bff; }  
+.text-secondary { color: #6c757d; }  
+.text-success { color: #28a745; }  
+.text-danger { color: #dc3545; }  
+.text-warning { color: #ffc107; }  
+.text-info { color: #17a2b8; }  
+
+.contact-info {  
+        text-align: center;
+	font-size: 1.35rem;
+	color: #2c3e50;  
+}  
+
+
+.contact-info a {  
+    
+    color: #4a4a4a;  
+    transition: color 0.3s ease;  
+    font-size: 1.1rem;  
+}  
+
+
+
+.contact-info a:hover {  
+    color: #2a2a2a;  
+}  
+
+.contact-info i {  
+    margin-right: 0.5rem;  
+}  
+
+.gap-4 {  
+    gap: 1.5rem;  
+}
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+ <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Israr Ahmad</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html"><i class="fas fa-history"></i> Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blogs.html"><i class="fas fa-file-text"></i> CV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pub.html"><i class="fas fa-scroll"></i> Publications</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>   
+
+    <div class="hero-section">  
+        <div class="container">  
+            <img src="img2.png" alt="Profile" class="profile-image">  
+            <h2 class="display-4">Hello! I'm Israr Ahmad</h2>  
+            <p class="animate-typing lead text-lg">Welcome to my portfolio</p>  
+            <hr class="my-4">  
+
+          <div class="contact-info mb-4">  
+    
+		<h4><i class="fas fa-address-card text-gray"></i> Contact Information</h4>  
+   		 <div class="d-flex justify-content-center flex-wrap gap-4 my-3">  
+        <a href="tel:+1234567890" class="text-decoration-none">  
+            <i class="fas fa-phone text-gray"></i> +86 (157) 3078-1430  
+        </a>  
+        <a href="mailto:ahmadisrar3045@gmail.com" class="text-decoration-none">  
+            <i class="fas fa-envelope text-gray"></i> Israr@buaa.edu.cn
+        </a>  
+        <a href="https://www.linkedin.com/in/israr-ahmad45/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">  
+            <i class="fab fa-linkedin text-gray"></i> LinkedIn  
+        </a>  
+        <a href="https://x.com/iDoswi1" target="_blank" rel="noopener noreferrer" class="text-decoration-none">  
+            <i class="fab fa-twitter text-gray"></i> X.com
+        </a>  
+        <a href="https://aboutprogrammingtrends.blogspot.com/" target="_blank" rel="noopener noreferrer" class="text-decoration-none">  
+            <i class="fas fa-globe text-gray"></i> Blog
+        </a>  
+    </div>  
+</div>  
+<hr class="my-4"> 
+
+
+
+
+          
+            <!-- Research Content -->  
+            <div class="research-content">  
+                <h2><i class="fas fa-brain text-gray"></i> Research Overview</h2>  
+                <p>
+                  
+My research spans the intersection of artificial intelligence, medical imaging, and computational vision, focusing on developing solutions for the healthcare and imaging challenges. This unique combination allows me to contribute to both theoretical advancements and practical implementations in medical and computer vision domains.                
+                </p>  
+
+                <h2><i class="fas fa-bullseye text-gray"></i> Core Research Areas</h2>  
+                
+                <h3><i class="fas fa-hospital text-gray"></i> 1. Medical Imaging & Healthcare AI</h3>  
+                <h4>Diagnostic Imaging Systems</h4>  
+                <ul>  
+                    <li>Development of AI-powered diagnostic tools for autism spectrum disorder detection using facial analysis</li>  
+                    <li>Experience with various imaging modalities and their applications</li>  
+                    <li>Interest in advancing medical image reconstruction and analysis techniques</li>  
+                </ul>  
+
+                <h4>Clinical Applications</h4>  
+                <ul>  
+                    <li>Integration of deep learning in healthcare diagnostics</li>  
+                    <li>Pattern recognition for medical image analysis</li>  
+                    <li>Development of robust automated detection systems</li>  
+                </ul>  
+
+                <h3><i class="fas fa-eye text-gray"></i> 2. Computer Vision & Pattern Recognition</h3>  
+                <h4>Advanced Vision Systems</h4>  
+                <ul>  
+                    <li>Design and implementation of the improved YOLOv8 (PIYN) for improved object detection</li>  
+                    <li>Development of racial identity-aware facial expression recognition systems</li>  
+                    <li>Real-time processing and analysis of visual data</li>  
+                </ul>  
+
+                <h4>Infrastructure Monitoring</h4>  
+                <ul>  
+                    <li>Creation of automated systems for road crack and pothole detection</li>  
+                    <li>Implementation of smart city monitoring solutions</li>  
+                    <li>Development of efficient visual inspection systems</li>  
+                </ul>  
+
+                <h3><i class="fas fa-camera text-gray"></i> 3. Computational Imaging & Reconstruction</h3>  
+                <h4>Image Reconstruction Algorithms</h4>  
+                <ul>  
+                    <li>Interest in developing efficient reconstruction methods for medical imaging</li>  
+                    <li>Experience with deep learning-based image enhancement</li>  
+                    <li>Focus on real-time processing capabilities</li>  
+                </ul>  
+
+                <h4>Multi-modal Imaging</h4>  
+                <ul>  
+                    <li>Integration of various imaging modalities for comprehensive analysis</li>  
+                    <li>Development of cross-modal learning approaches</li>  
+                    <li>Interest in advancing image registration techniques</li>  
+                </ul>  
+     
+            <h2><i class="fas fa-microscope text-gray"></i> Current Research Directions</h2>  
+                
+                <h3><i class="fas fa-stethoscope text-gray"></i> 1. AI in Medical Imaging</h3>  
+                <h4>Research Focus</h4>  
+                <ul>  
+                    <li>Development of robust deep learning models for medical image analysis</li>  
+                    <li>Integration of computer vision techniques in healthcare applications</li>  
+                    <li>Interest in:  
+                        <ul>  
+                            <li>Medical image reconstruction</li>  
+                            <li>Tomographic imaging</li>  
+                            <li>Non-parametric estimation methods</li>  
+                            <li>Inverse problems in imaging</li>  
+                        </ul>  
+                    </li>  
+                </ul>  
+
+                <h3><i class="fas fa-bolt text-gray"></i> 2. Advanced Computing Paradigms</h3>  
+                <h4>Edge Computing Solutions</h4>  
+                <ul>  
+                    <li>Development of lightweight neural networks for resource-constrained environments</li>  
+                    <li>Real-time processing optimization</li>  
+                    <li>Distributed AI systems</li>  
+                </ul>  
+
+                <h4>Model Optimization</h4>  
+                <ul>  
+                    <li>Architecture design for efficient inference</li>  
+                    <li>Transfer learning applications</li>  
+                    <li>Performance optimization techniques</li>  
+                </ul>  
+
+                <h3><i class="fas fa-magic text-gray"></i> 3. Emerging Technologies Integration</h3>  
+                <h4>Cross-Domain Applications</h4>  
+                <ul>  
+                    <li>Bridging computer vision with medical imaging</li>  
+                    <li>Integration of NLP for comprehensive healthcare solutions</li>  
+                    <li>Development of multi-modal systems</li>  
+                </ul>  
+
+                <h2><i class="fas fa-tools text-gray"></i> Technical Expertise</h2>  
+                
+                <h3><i class="fas fa-laptop-code text-gray"></i> Tools & Frameworks</h3>  
+                <ul>  
+                    <li>Deep Learning: PyTorch, TensorFlow, FastAI</li>  
+                    <li>Image Processing: OpenCV, scikit-image</li>  
+                    <li>Scientific Computing: MATLAB, Python Scientific Stack</li>  
+                    <li>Data Analysis: Pandas, NumPy, SciPy</li>  
+                </ul>  
+
+                <h3><i class="fas fa-chart-bar text-gray"></i> Methodologies</h3>  
+                <ul>  
+                    <li>Deep Learning Architecture Design</li>  
+                    <li>Image Reconstruction Algorithms</li>  
+                    <li>Pattern Recognition Systems</li>  
+                    <li>Statistical Analysis</li>  
+                    <li>Performance Optimization</li>  
+                </ul>  
+
+                <h2><i class="fas fa-compass text-gray"></i> Research Philosophy</h2>  
+                <p>Three core principles guide my research approach:</p>  
+                <ol>  
+                    <li>Innovation with Purpose: Every technical advancement should have a clear path to practical impact</li>  
+                    <li>Cross-Domain Integration: The most compelling solutions often emerge at the intersection of different AI domains</li>  
+                    <li>Adaptable Excellence: Maintaining technical rigor while being flexible enough to embrace new methodologies and challenges</li>  
+                </ol>  
+
+                <h2><i class="fas fa-bullseye text-gray"></i> Future Research Goals</h2>  
+                <p>I am particularly interested in:</p>  
+                <ul>  
+                    <li>Advancing medical image reconstruction techniques</li>  
+                    <li>Developing novel AI architectures for healthcare applications</li>  
+                    <li>Contributing to open-source medical imaging tools</li>  
+                    <li>Exploring new frontiers in computational imaging</li>  
+                    <li>Integrating machine learning with traditional imaging methods</li>  
+                </ul>  
+
+                <h2><i class="fas fa-handshake text-gray"></i> Collaboration Interests</h2>  
+                <p>Seeking opportunities in:</p>  
+                <ul>  
+                    <li>Medical imaging research groups</li>  
+                    <li>Computer vision laboratories</li>  
+                    <li>Healthcare AI initiatives</li>  
+                    <li>Cross-disciplinary imaging projects</li>  
+                    <li>Open-source medical imaging software development</li>  
+                </ul>  
+
+                <hr class="my-4">  
+                <p class="text-center fw-bold fs-5 bounce-in pulse-effect">📚 Currently seeking PhD positions in medical imaging, computer vision, and computational imaging. Open to TA/RA roles in related fields.</p>  
+            </div>  
+        </div>  
+    </div>  
+  
+
+    <footer class="footer">  
+        <div class="visitor-count">  
+            <i class="fas fa-eye "></i> You are visitor number <span id="visitor-count"></span>  
+            <span class="like-counter" id="like-counter">❤️ <span id="like-count">0</span></span>  
+        </div>  
+    </footer>  
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
+    
+        <script>  
+        document.addEventListener('DOMContentLoaded', function() {  
+    // Clear localStorage for testing (uncomment this line to reset everything)  
+    // localStorage.clear();  
+
+    // Generate a unique user ID if not exists  
+    if (!localStorage.getItem('userId')) {  
+        localStorage.setItem('userId', 'user_' + Math.random().toString(36).substr(2, 9));  
+    }  
+    const userId = localStorage.getItem('userId');  
+
+    // Visitor counter  
+    let visitorCount = localStorage.getItem('globalVisitorCount') || 142;  
+    visitorCount = parseInt(visitorCount) + 1;  
+    localStorage.setItem('globalVisitorCount', visitorCount);  
+    document.getElementById('visitor-count').textContent = visitorCount;  
+
+    // Like counter  
+    const likeCounter = document.getElementById('like-counter');  
+    const likedUsers = JSON.parse(localStorage.getItem('likedUsers') || '[]');  
+    
+    // Force initial like count to 49  
+    let globalLikeCount = 81;  
+    if (!localStorage.getItem('globalLikeCount')) {  
+        localStorage.setItem('globalLikeCount', globalLikeCount.toString());  
+    } else {  
+        globalLikeCount = parseInt(localStorage.getItem('globalLikeCount'));  
+    }  
+    
+    console.log('Initial like count:', globalLikeCount);  
+    console.log('Liked users:', likedUsers);  
+    
+    document.getElementById('like-count').textContent = globalLikeCount;  
+
+    if (likedUsers.includes(userId)) {  
+        likeCounter.classList.add('liked');  
+    }  
+
+    likeCounter.addEventListener('click', function() {  
+        if (!likedUsers.includes(userId)) {  
+            globalLikeCount++;  
+            localStorage.setItem('globalLikeCount', globalLikeCount.toString());  
+            likedUsers.push(userId);  
+            localStorage.setItem('likedUsers', JSON.stringify(likedUsers));  
+            document.getElementById('like-count').textContent = globalLikeCount;  
+            likeCounter.classList.add('liked');  
+            console.log('Liked! New count:', globalLikeCount);  
+        } else {  
+            console.log('Already liked');  
+        }  
+    });  
+});   
+    </script>   
+</body>
+</html>
