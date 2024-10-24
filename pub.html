@@ -1,1 +1,305 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Israr Ahmad - Education</title>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
+    <style>  
+        .navbar {  
+            background-color: #2c3e50;  
+            padding: 1rem 0;  
+        }  
+        
+        .navbar-brand, .nav-link {  
+            color: white !important;  
+        }  
+        
+        .navbar-toggler {  
+            background-color: #ffffff3d;  
+        }  
+        
+        .navbar-toggler-icon {  
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");  
+        }  
+        
+        .nav-link {  
+            padding: 0.5rem 1rem !important;  
+            transition: all 0.3s ease;  
+        }  
+        
+        .nav-link:hover {  
+            color: #ecf0f1 !important;  
+            background-color: rgba(255, 255, 255, 0.1);  
+            border-radius: 4px;  
+        }  
+        
+        .nav-link.active {  
+            font-weight: bold !important;  
+            text-decoration: underline !important;  
+        }  
 
+        .education-card {  
+            display: flex;  
+            align-items: start;  
+            margin-bottom: 2rem;  
+            padding: 1.5rem;  
+            border: 1px solid #e0e0e0;   
+            border-radius: 8px;  
+            background-color: #f8f9fa;    
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);  
+        }  
+
+        .institution-logo {  
+            width: 90px;  
+            height: 90px;  
+            object-fit: cover;  
+            border: 1px solid #4a4a4a;  
+            border-radius: 8px;  
+            margin-right: 1.5rem;  
+        }  
+
+        .education-content {  
+            flex: 1;  
+        }  
+
+        .institution-name {  
+            font-size: 1.4rem;  
+            color: #2c3e50;  
+            margin-bottom: 0.5rem;  
+        }  
+
+        .degree-title {  
+            font-size: 1.1rem;  
+            color: #34495e;  
+            margin-bottom: 1rem;  
+        }  
+
+        .achievement-list {  
+            list-style-type: none;  
+            padding-left: 0;  
+        }  
+
+        .achievement-list li {  
+            margin-bottom: 0.5rem;  
+            padding-left: 1.5rem;  
+            position: relative;  
+        }  
+
+        .achievement-list li:before {  
+            content: "•";  
+            color: #2c3e50;  
+            position: absolute;  
+            left: 0;  
+        }  
+
+        .footer {  
+            background-color: #2c3e50;  
+            color: white;  
+            padding: 20px 0;  
+            position: fixed;  
+            bottom: 0;  
+            width: 100%;  
+            text-align: center;  
+        }  
+
+        .research-content {  
+            max-width: 800px;  
+            margin: 0 auto;  
+            padding: 20px;  
+        }  
+
+        .icon-title {  
+            font-size: 1.4rem;  
+            font-weight: bold;  
+            margin-bottom: 1.5rem;  
+        }  
+
+        .icon-title i {  
+            margin-right: 0.5rem;  
+            color: #4a4a4a;  
+        }  
+
+        body {  
+            padding-bottom: 80px;  
+            background-color: #f8f9fa;  
+        }  
+
+        .hero-section {  
+            padding: 50px 0;  
+        }  
+
+        @media (max-width: 768px) {  
+            .education-card {  
+                flex-direction: column;  
+            }  
+            
+            .institution-logo {  
+                margin-bottom: 1rem;  
+                margin-right: 0;  
+            }  
+        } 
+	
+	.pulse-effect {  
+    animation: pulse 2s infinite;  
+	}  
+
+	@keyframes pulse {  
+            0% {  
+                transform: scale(1);  
+            }  
+            50% {  
+                transform: scale(1.05);  
+            }  
+            100% {  
+                transform: scale(1);  
+            }  
+        }  
+        .pulse-animation:hover {  
+            animation: pulse 1s infinite;  
+        }
+	
+	.research-content h2 {  
+            font-size: 1.35rem;  
+            color: #2c3e50;  
+            border-bottom: 1px solid #ddd;  
+            padding-bottom: 10px;  
+            margin-top: 40px;  
+            margin-bottom: 20px;  
+        }  
+
+        .research-content h3 {  
+            font-size: 1.15rem;  
+            color: #34495e;  
+            margin-top: 30px;  
+            margin-bottom: 15px;  
+        }  
+
+        .research-content h4 {  
+            font-size: 0.9rem;  
+            color: #2c3e50;
+		padding: 10 px;  
+            margin-top: 20px;  
+            margin-bottom: 10px;  
+        }  
+	
+	  .research-content h5 {  
+            font-size: 0.85rem;  
+            color: #807d7d; 
+            margin-top: 8px;  
+            margin-bottom: 15px;  
+        }
+	
+	#acl{  
+            font-size: 0.85rem;  
+            color: #5959e3;
+	    /* border-bottom: 1px solid #dedee3;  
+            margin-top: 0px;  
+            margin-bottom: 20px;  
+        }
+ 
+    </style>  
+</head>  
+<body>  
+    <!-- Navigation Bar -->  
+    <nav class="navbar navbar-expand-lg">  
+        <div class="container">  
+            <a class="navbar-brand" href="index.html">Israr Ahmad</a>  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">  
+                <span class="navbar-toggler-icon"></span>  
+            </button>  
+            <div class="collapse navbar-collapse" id="navbarNav">  
+                <ul class="navbar-nav ms-auto">  
+                    <li class="nav-item">  
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>  
+                    </li>  
+                    <li class="nav-item">  
+                        <a class="nav-link" href="projects.html"><i class="fas fa-project-diagram"></i> Experience</a>  
+                    </li>  
+                    <li class="nav-item">  
+                        <a class="nav-link active" href="education.html"><i class="fas fa-file-text"></i> CV</a>  
+                    </li>  
+                    <li class="nav-item">  
+                        <a class="nav-link" href="pub.html"><i class="fas fa-scroll"></i> Publications</a>  
+                    </li>  
+                </ul>  
+            </div>  
+        </div>  
+    </nav>  
+
+    <!-- Hero Section -->  
+    <div class="hero-section">  
+        <div class="research-content">  
+            <h2 class="icon-title">  
+                <i class="fas fa-graduation-cap"></i> Thesis & Projects  
+            </h2> 
+
+		<h3><i class="fas fa-book-open text-gray"></i> Master Thesis</h3>  
+                <h4>ResMU-Net: An Efficient and Fast Hybrid Deep Learning Model for Brain Tumor Segmentation using MRI Images </h4>  
+                <h3><i class="fas fa-project-diagram text-gray"></i> BS Final Year Project</h3> 
+		<h4>Disease Detection and Recognition of Three Vegetables Based on Transfer Learning with Image Data</h4>  
+
+<h2 class="icon-title">  
+                <i class="fas fa-scroll"></i> Publications  
+            </h2> 
+
+   <!-- Beihang University -->  
+            <div class="education-card">  
+                <div class="education-content">  
+                    <h3 class="education-content">Empowering Accurate and Real-Time Remote Sensing Target Detection with Enhanced YOLOv8</h3>  
+                    <h4 class="degree-title">Journal: Computer & Standards</h4>  
+                    <p color:#807d7d;><em>07 August 2024 (Pre-Print)</em></p>  
+                    <p>Current remote sensing image object detection algorithms struggle with false positives, missed targets, and subpar accuracy. We proposed an improved YOLOv8 network (PIYN) solution to tackle these issues through targeted modifications to the YOLOv8 architecture. The backbone network of YOLOv8 uses a Cross-Stage Partial (CSP) with 2 convolutions, called a faster C2f module. Firstly, the C2f module is infused with the Efficient Multi-Scale Attention (EMA) mechanism, enhancing the module's ability to process information at various scales. Secondly, a compact Path Aggregation Network (Compact-PAN) structure within the neck network reduces the computational complexity of the model. Finally, replacing the Complete Intersection over Union (CIoU) loss function with Weighted Intersection over Union (WIoU) refines the model's detection accuracy. We also applied K-fold cross-validation on the dataset to mitigate the overfitting issue. Extensive Dataset for Object deTection in Aerial images (DOTA) and Dataset for Object Recognition in Optical Remote sensing imagery (DIOR) datasets experiments reveal PIYN's effectiveness: a 2.43% and 2.56% mAP increase over YOLOv8, respectively, coupled with a 4.49% GFLOPs reduction. This demonstrates PIYN's ability to boost accuracy while maintaining efficiency and solidifies its progressive and practical impact, with implications for smart city scenarios.
+</p>
+ </div>  
+            </div>
+
+          <!-- Beihang University -->  
+            <div class="education-card">  
+                <div class="education-content">  
+                    <h3 class="education-content">Autism spectrum disorder detection using facial images: A performance comparison of pretrained convolutional neural networks</h3>  
+                    <h4 class="degree-title">Journal: Healthcare Technology Letters</h4>  
+                    <p color:#807d7d;><em>08 January 2024</em></p>  
+                    <p>Autism spectrum disorder (ASD) is a complex psychological syndrome characterized by persistent difficulties in social interaction, restricted behaviours, speech, and nonverbal communication. The impacts of this disorder and the severity of symptoms vary from person to person. In most cases, symptoms of ASD appear at the age of 2 to 5 and continue throughout adolescence and into adulthood. While this disorder cannot be cured completely, studies have shown that early detection of this syndrome can assist in maintaining the behavioural and psychological development of children. Experts are currently studying various machine learning methods, particularly convolutional neural networks, to expedite the screening process. Convolutional neural networks are considered promising frameworks for the diagnosis of ASD. This study employs different pre-trained convolutional neural networks such as ResNet34, ResNet50, AlexNet, MobileNetV2, VGG16, and VGG19 to diagnose ASD and compared their performance. Transfer learning was applied to every model included in the study to achieve higher results than the initial models. The proposed ResNet50 model achieved the highest accuracy, 92%, compared to other transfer learning models. The proposed method also outperformed the state-of-the-art models in terms of accuracy and computational cost.
+</p> 
+ </div>  
+            </div>
+          <!-- Beihang University -->  
+            <div class="education-card">  
+                <div class="education-content">  
+                    <h3 class="education-content">Racial Identity-Aware Facial Expression Recognition Using Deep Convolutional Neural Networks</h3>  
+                    <h4 class="degree-title">Journal: Applied Sciences</h4>  
+                    <p color:#807d7d;><em>November 25, 2021</em></p>  
+                    <p>Multi-culture facial expression recognition remains challenging due to cross cultural variations in facial expressions representation, caused by facial structure variations and culture specific facial characteristics. In this research, a joint deep learning approach called racial identity aware deep convolution neural network is developed to recognize the multicultural facial expressions. In the proposed model, a pre-trained racial identity network learns the racial features. Then, the racial identity aware network and racial identity network jointly learn the racial identity aware facial expressions. By enforcing the marginal independence of facial expression and racial identity, the proposed joint learning approach is expected to be purer for the expression and be robust to facial structure and culture specific facial characteristics variations. For the reliability of the proposed joint learning technique, extensive experiments were performed with racial identity features and without racial identity features. Moreover, culture wise facial expression recognition was performed to analyze the effect of inter-culture variations in facial expression representation. A large scale multi-culture dataset is developed by combining the four facial expression datasets including JAFFE, TFEID, CK+ and RaFD. It contains facial expression images of Japanese, Taiwanese, American, Caucasian and Moroccan cultures. We achieved 96% accuracy with racial identity features and 93% accuracy without racial identity features.
+
+</p> 
+ </div>  
+            </div>
+
+<div class="education-card">  
+                <div class="education-content">  
+                    <h3 class="education-content">Deep Learning Method to Detect the Road Cracks and Potholes for Smart Cities</h3>  
+                    <h4 class="degree-title">Journal: Computer, Material & Continua</h4>  
+                    <p color:#807d7d;><em>February 6, 2023</em></p>  
+                    <p>The increasing global population at a rapid pace makes road traffic dense; managing such massive traffic is challenging. In developing countries like Pakistan, road traffic accidents (RTA) have the highest mortality percentage among other Asian countries. The main reasons for RTAs are road cracks and potholes. Understanding the need for an automated system for the detection of cracks and potholes, this study proposes a decision support system (DSS) for an autonomous road information system for smart city development with the use of deep learning. The proposed DSS works in layers where initially the image of roads is captured and coordinates attached to the image with the help of global positioning system (GPS), communicated to the decision layer to find about the cracks and potholes in the roads, and eventually, that information is passed to the road management information system, which gives information to drivers and the maintenance department. For the decision layer, we projected a CNN-based model for pothole crack detection (PCD). Aimed at training, a K-fold cross-validation strategy was used where the value of K was set to 10. The training of PCD was completed with a self-collected dataset consisting of 6000 images from Pakistani roads. The proposed PCD achieved 98% of precision, 97% recall, and accuracy while testing on unseen images. The results produced by our model are higher than the existing model in terms of performance and computational cost, which proves its significance.</p>  
+                  
+                </div>  
+            </div>		   
+        </div>  
+    </div>  
+
+
+
+
+
+
+    <!-- Footer -->  
+    <footer class="footer">  
+        <div class="container">  
+            <p>This is Israr Ahmad's Portfolio Website</p>  
+        </div>  
+    </footer>  
+</body>  
+</html>  
