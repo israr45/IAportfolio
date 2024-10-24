@@ -1,0 +1,416 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Israr Ahmad - Education</title>  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
+    <style>  
+        .navbar {  
+            background-color: #2c3e50;  
+            padding: 1rem 0;  
+        }  
+        
+        .navbar-brand, .nav-link {  
+            color: white !important;  
+        }  
+        
+        .navbar-toggler {  
+            background-color: #ffffff3d;  
+        }  
+        
+        .navbar-toggler-icon {  
+            background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");  
+        }  
+        
+        .nav-link {  
+            padding: 0.5rem 1rem !important;  
+            transition: all 0.3s ease;  
+        }  
+        
+        .nav-link:hover {  
+            color: #ecf0f1 !important;  
+            background-color: rgba(255, 255, 255, 0.1);  
+            border-radius: 4px;  
+        }  
+        
+        .nav-link.active {  
+            font-weight: bold !important;  
+            text-decoration: underline !important;  
+        }  
+
+        .education-card {  
+            display: flex;  
+            align-items: start;  
+            margin-bottom: 2rem;  
+            padding: 1.5rem;  
+            border: 1px solid #e0e0e0;   
+            border-radius: 8px;  
+            background-color: #f8f9fa;    
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);  
+        }  
+
+        .institution-logo {  
+            width: 90px;  
+            height: 90px;  
+            object-fit: cover;  
+            border: 1px solid #4a4a4a;  
+            border-radius: 8px;  
+            margin-right: 1.5rem;  
+        }  
+
+        .education-content {  
+            flex: 1;  
+        }  
+
+        .institution-name {  
+            font-size: 1.4rem;  
+            color: #2c3e50;  
+            margin-bottom: 0.5rem;  
+        }  
+
+        .degree-title {  
+            font-size: 1.1rem;  
+            color: #34495e;  
+            margin-bottom: 1rem;  
+        }  
+
+        .achievement-list {  
+            list-style-type: none;  
+            padding-left: 0;  
+        }  
+
+        .achievement-list li {  
+            margin-bottom: 0.5rem;  
+            padding-left: 1.5rem;  
+            position: relative;  
+        }  
+
+        .achievement-list li:before {  
+            content: "•";  
+            color: #2c3e50;  
+            position: absolute;  
+            left: 0;  
+        }  
+
+        .footer {  
+            background-color: #2c3e50;  
+            color: white;  
+            padding: 20px 0;  
+            position: fixed;  
+            bottom: 0;  
+            width: 100%;  
+            text-align: center;  
+        }  
+
+        .research-content {  
+            max-width: 800px;  
+            margin: 0 auto;  
+            padding: 20px;  
+        }  
+
+        .icon-title {  
+            font-size: 1.4rem;  
+            font-weight: bold;  
+            margin-bottom: 1.5rem;  
+        }  
+
+        .icon-title i {  
+            margin-right: 0.5rem;  
+            color: #4a4a4a;  
+        }  
+
+        body {  
+            padding-bottom: 80px;  
+            background-color: #f8f9fa;  
+        }  
+
+        .hero-section {  
+            padding: 50px 0;  
+        }  
+
+        @media (max-width: 768px) {  
+            .education-card {  
+                flex-direction: column;  
+            }  
+            
+            .institution-logo {  
+                margin-bottom: 1rem;  
+                margin-right: 0;  
+            }  
+        } 
+	
+	.pulse-effect {  
+    animation: pulse 2s infinite;  
+	}  
+
+	@keyframes pulse {  
+            0% {  
+                transform: scale(1);  
+            }  
+            50% {  
+                transform: scale(1.05);  
+            }  
+            100% {  
+                transform: scale(1);  
+            }  
+        }  
+        .pulse-animation:hover {  
+            animation: pulse 1s infinite;  
+        }
+	
+	.research-content h2 {  
+            font-size: 1.35rem;  
+            color: #2c3e50;  
+            border-bottom: 1px solid #ddd;  
+            padding-bottom: 10px;  
+            margin-top: 40px;  
+            margin-bottom: 20px;  
+        }  
+
+        .research-content h3 {  
+            font-size: 1.15rem;  
+            color: #34495e;  
+            margin-top: 30px;  
+            margin-bottom: 15px;  
+        }  
+
+        .research-content h4 {  
+            font-size: 1.05rem;  
+            color: #2c3e50;
+		padding: 10 px;  
+            margin-top: 20px;  
+            margin-bottom: 10px;  
+        }  
+	
+	  .research-content h5 {  
+            font-size: 0.9rem;  
+            color: #807d7d; 
+            margin-top: 8px;  
+            margin-bottom: 15px;  
+        }
+	
+	#acl{  
+            font-size: 0.85rem;  
+            color: #5959e3;
+	    /* border-bottom: 1px solid #dedee3;  
+            margin-top: 0px;  
+            margin-bottom: 20px;  
+        }
+ 
+    </style>  
+</head>  
+<body>  
+    <!-- Navigation Bar -->  
+    <nav class="navbar navbar-expand-lg">  
+        <div class="container">  
+            <a class="navbar-brand" href="index.html">Israr Ahmad</a>  
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">  
+                <span class="navbar-toggler-icon"></span>  
+            </button>  
+            <div class="collapse navbar-collapse" id="navbarNav">  
+                <ul class="navbar-nav ms-auto">  
+                    <li class="nav-item">  
+                        <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>  
+                    </li>  
+                    <li class="nav-item">  
+                        <a class="nav-link" href="projects.html"><i class="fas fa-project-diagram"></i> Experience</a>  
+                    </li>  
+                    <li class="nav-item">  
+                        <a class="nav-link active" href="education.html"><i class="fas fa-file-text"></i> CV</a>  
+                    </li>  
+                    <li class="nav-item">  
+                        <a class="nav-link" href="skills.html"><i class="fas fa-cogs"></i> Skills</a>  
+                    </li>  
+                </ul>  
+            </div>  
+        </div>  
+    </nav>  
+
+    <!-- Hero Section -->  
+    <div class="hero-section">  
+        <div class="research-content">  
+            <h2 class="icon-title">  
+                <i class="fas fa-graduation-cap"></i> Educational Journey  
+            </h2>  
+            <p class="mb-4">  
+                A dedicated researcher with a strong foundation in Pattern Recognition, Machine Learning, and Computer Vision. My academic path reflects a consistent progression from electronics to advanced AI systems, marked by research excellence and academic achievements. <a href="Ahmad_CV.pdf" target="_blank" rel="noopener noreferrer" class="pulse-animation" style="color: #2563eb; text-decoration: none; display: flex; align-items: center; font-weight: 500;">  
+            <i class="fas fa-file-alt" style="margin-right: 8px;"></i>  
+            Download my CV  
+        </a>  
+            </p>  
+
+            <!-- Beihang University -->  
+            <div class="education-card">  
+                <img src="Beihang.svg" alt="Beihang University" class="institution-logo">  
+                <div class="education-content">  
+                    <h3 class="institution-name">Beihang University, Beijing, China (2018-2021)</h3>  
+                    <h4 class="degree-title">Master of Engineering in Pattern Recognition</h4>  
+                    <p><em>One of China's top engineering institutions, known as the "MIT of China"</em></p>  
+                    <p>Research Focus:</p>  
+                    <ul class="achievement-list">  
+                        <li>Advanced deep learning architectures for visual computing</li>  
+                        <li>Neural network optimization and model compression</li>  
+                        <li>Real-time object detection systems</li>  
+                    </ul>  
+                    <p>Key Achievements:</p>  
+                    <ul class="achievement-list">  
+                        <li>Maintained an excellent academic performance (GPA: 3.31/4.00)</li>  
+                   
+                        <li>Secured competitive China Scholarship Council (CSC) funding worth $34,482</li>  
+                        <li>Served as Teaching Assistant for undergraduate computer science courses</li>  
+                        <li>Collaborated on cross-cultural research projects with international teams</li>  
+                    </ul>  
+                </div>  
+            </div>  
+
+            <!-- University of Education Lahore -->  
+            <div class="education-card">  
+                <img src="uoe.png" alt="University of Education Lahore" class="institution-logo">  
+                <div class="education-content">  
+                    <h3 class="institution-name">University of Education Lahore, Pakistan (2013-2017)</h3>  
+                    <h4 class="degree-title">Bachelor of Science in Information Technology</h4>  
+                    <p>Specialized Focus:</p>  
+                    <ul class="achievement-list">  
+                        <li>Artificial Intelligence and Machine Learning</li>  
+                        <li>Data Mining and Warehousing</li>  
+                        <li>Advanced Database Systems</li>  
+                        <li>Network Security and Cloud Computing</li>  
+                    </ul>  
+                    <p>Notable Accomplishments:</p>  
+                    <ul class="achievement-list">  
+                        <li>Achieved exceptional academic performance (GPA: 3.37/4.00)</li>  
+                        <li>Ranked top performer among 240 students, earning merit-based fee waiver</li>  
+                        <li>Led the annual IT Exhibition</li>  
+                        <li>Developed a Learning Management System as final year project</li>  
+                    </ul>  
+                </div>  
+            </div>  
+
+            <!-- Quaid e Azam Polytechnic Institute -->  
+            <div class="education-card">  
+                <img src="qea.png" alt="Quaid e Azam Polytechnic Institute" class="institution-logo">  
+                <div class="education-content">  
+                    <h3 class="institution-name">Quaid e Azam Polytechnic Institute (2007-2011)</h3>  
+                    <h4 class="degree-title">Diploma of Associate Engineering</h4>  
+                    <p>Technical Foundation:</p>  
+                    <ul class="achievement-list">  
+                        <li>Solid understanding of hardware systems</li>  
+                        <li>Practical experience in electronic circuit design</li>  
+                        <li>Foundation for advanced computing systems</li>  
+                    </ul>  
+                </div>  
+            </div>  
+
+            <!-- Research Interests Section -->  
+            <h2 class="icon-title mt-5">  
+                <i class="fas fa-trophy"></i> Certification & Awards  
+            </h2>
+            
+	<h3><i class="fas fa-brain text-gray"></i> Unleashing the Power of Reinforcement Learning for Trading</h3>
+		<h5>IBMSkillsNetwork GPXX0SQEN Certificate</h5>
+		<p>Issued: Aug 2023 </p>
+		 <a href="https://courses.cognitiveclass.ai/certificates/4ae42cbc87c34c9598b5bc95ea2dc1b3" id="acl" target="_blank" rel="noopener noreferrer" class="pulse-animation" style="color: #2563eb; text-decoration: none; display: flex; align-items: center; font-weight: 500;">  
+            <i class="fas fa-file-alt" style="margin-right: 8px;"></i>  
+            See Credentials  
+        </a>  
+          
+	<h3><i class="fas fa-language text-gray"></i> EFSET English Certificate 69/100 (C1 Advanced)</h3>
+		<h5>EF Standard English Test (EF SET)</h5>
+		<p>Issued: Issued Jul 2022 </p>
+		 <a href="https://cert.efset.org/AdSixp" id="acl" target="_blank" rel="noopener noreferrer" class="pulse-animation" style="color: #2563eb; text-decoration: none; display: flex; align-items: center; font-weight: 500;">  
+            <i class="fas fa-file-alt" style="margin-right: 8px;"></i>  
+            See Credentials  
+        </a> 
+	     
+	<h3><i class="fas fa-video text-gray"></i> Advanced Computer Vision with OpenCV and Python</h3>
+		<h5>MachineLearning.org</h5>
+		<p>Issued: Issued Jan 2022</p>
+		 <a href="https://machinelearning.org.in/courses/certificate/db8d5e46c" id="acl" target="_blank" rel="noopener noreferrer" class="pulse-animation" style="color: #2563eb; text-decoration: none; display: flex; align-items: center; font-weight: 500;">  
+            <i class="fas fa-file-alt" style="margin-right: 8px;"></i>  
+            See Credentials  
+        </a> 
+	
+	<h3><i class="fas fa-code text-gray"></i> Python for Data Science</h3>
+		<h5>IBM</h5>
+		<p>Issued: Issued Jan 2022 </p>
+		 <a href="https://www.credly.com/badges/aafb4815-00d0-4b94-b9ed-d3ff13942a93?source=linked_in_profile"id="acl" target="_blank" rel="noopener noreferrer" class="pulse-animation" style="color: #2563eb; text-decoration: none; display: flex; align-items: center; font-weight: 500;">  
+            <i class="fas fa-file-alt" style="margin-right: 8px;"></i>  
+            See Credentials  
+        </a>
+
+	<h3><i class="fas fa-network-wired text-gray"></i> Machine Learning Foundations</h3>
+		<h5>Udacity</h5>
+		<p>Issued: Issued Oct 2021 </p>
+		 <a href="https://www.udacity.com/certificate/CKAG4WDJ"id="acl" target="_blank" rel="noopener noreferrer" class="pulse-animation" style="color: #2563eb; text-decoration: none; display: flex; align-items: center; font-weight: 500;">  
+            <i class="fas fa-file-alt" style="margin-right: 8px;"></i>  
+            See Credentials  
+        </a>
+
+	<h3><i class="fas fa-python text-gray"></i> Introduction to Programming Using Python</h3>
+		<h5>BitDegree</h5>
+		<p>Issued: Issued Jan 2020 </p>
+		 <a href="https://www.bitdegree.org/free-certifications-onlin"id="acl" target="_blank" rel="noopener noreferrer" class="pulse-animation" style="color: #2563eb; text-decoration: none; display: flex; align-items: center; font-weight: 500;">  
+            <i class="fas fa-file-alt" style="margin-right: 8px;"></i>  
+            See Credentials  
+        </a>
+
+<h2 class="icon-title mt-5">  
+                <i class="fas fa-award"></i> Honors & Distinctions  
+            </h2>
+            <h3>Academic Excellence </h3>
+	<h4><i class="fas fa-laptop text-gray"></i> Prime Minister's Merit Laptop Award</h4>
+		<ul>  
+                    <li>Selected by the Government of Pakistan for outstanding academic performance</li>
+		<li>Award recognizes top-performing students demonstrating exceptional promise in technology and innovation</li>
+		<li>Part of a national initiative to empower future technology leaders</li>
+  
+                </ul>
+
+		<h3>Leadership & Communication </h3>
+	<h4><i class="fas fa-microphone-alt text-gray"></i> Best Speaker Award, Computer Science Department</h4>
+		<ul>  
+                <li> First Place, University of Education Technical Presentation Competition</li>
+		<li> Demonstrated exceptional ability to communicate complex technical concepts</li>
+		<li> Recognized for clarity, technical depth, and engaging presentation style</li>
+                </ul>
+
+		<h3>Leadership & Communication </h3>
+	<h4><i class="fas fa-users text-gray"></i> Departmental Class Representative</h4>
+		<ul>  
+                
+ 		<li>Elected by peers to serve as the primary liaison between faculty and students</li>
+ 		<li>Led peer-learning sessions during faculty absences, focusing on project management and technical discussions</li>
+ 	<li>Demonstrated strong organizational and leadership capabilities in an academic setting</li>
+		</ul>
+
+		<h3>Sports Leadership </h3>
+	<h4><i class="fas fa-running text-gray"></i> Sports Leadership</h4>
+		<ul>  
+                
+ 		<li>University Championship Cricket Team Captain</li>
+ 		<li>Led the Computer Science Department team to victory in the 2017 Sports Gala</li>
+ 	<li>Exemplified team leadership, strategic planning, and effective communication</li>
+<li>Balanced academic excellence with athletic achievement, demonstrating strong time management skills</li>
+		</ul>
+	
+
+		   
+        </div>  
+    </div>  
+
+
+
+
+
+
+    <!-- Footer -->  
+    <footer class="footer">  
+        <div class="container">  
+            <p>This is Israr Ahmad's Portfolio Website</p>  
+        </div>  
+    </footer>  
+</body>  
+</html>  
